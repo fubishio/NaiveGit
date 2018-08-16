@@ -42,4 +42,4 @@ To run the tests, use either command line or IDE. For commandline, if junit is s
 
 ## Acknowledgements
 
-Thanks to floormate Robert CommitNode.java and testing, I was a little big hazy on how to store the nodes themselves and how to make the testing helper functions.
+Thanks to floormate Robert with CommitNode.java and testing, I was a little big hazy on how to store the nodes themselves and how to make the testing helper functions.
