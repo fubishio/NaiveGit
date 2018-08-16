@@ -5,30 +5,30 @@ This is a basic version control system that is implemented in Java which specifi
 ## Getting Started
 
 Requires Java and if JUnit is how you roll (which you should), that too. Copy and paste into directory then plug and play!     
-Run with `java NaiveGit command [input]`
+Compile with `javac *.java` and run with `java NaiveGit command [input]`
 
 ### Features
-Supports these commands:  
-init - initializes in directory  
-add [file] - add file to be tracked  
-commit [commit message] - pretty much same as git commit -m  
-rm [file] - removes file to be tracked  
-log - displays commit from pointer to head  
-global-log - displays all commits  
-*find [commit message] - basically helps you find a specific commit                      
-status - shows which files are tracked  
-checkout [file] or [commit id] [file] or [branch name] - checks out a commit like it does in git  
-branch [branch name] - makes a new branch or pointer at a specific place in the commit tree  
-rm-branch [branch name] - deletes the branch/pointer  
-reset [commit name] - move to the commit and moves pointer to it too  
-**merge [branch name] - merges files from the head of branch into the head of current branch  
-***rebase [branch name] - reattaches head of current branch to head of given branch  
-***i-rebase [branch name] - better description [here](https://git-scm.com/docs/git-rebase)  
+These are the commands that are in NaiveGit:  
+* init - initializes in directory  
+* add [file] - add file to be tracked  
+* commit [commit message] - pretty much same as git commit -m  
+* rm [file] - removes file to be tracked  
+* log - displays commit from pointer to head  
+* global-log - displays all commits  
+* find [commit message] - finds a specific commit (does not exist in actual git) 
+* status - shows which files are tracked  
+* checkout [file] or [commit id] [file] or [branch name] - checks out a commit like it does in git  
+* branch [branch name] - makes a new branch or pointer at a specific place in the commit tree  
+* rm-branch [branch name] - deletes the branch/pointer  
+* reset [commit name] - move to the commit and moves pointer to it too  
+* *merge [branch name] - merges files from the head of branch into the head of current branch  
+* **rebase [branch name] - reattaches head of current branch to head of given branch  
+* **i-rebase [branch name] - better description [here](https://git-scm.com/docs/git-rebase)  
 
-*does not exist in actual git  
-**merge conflict handled differently  
-***simplified from the actual git but still good for learning the gist of it  
---no command supports flags in the way actual git does   
+*merge conflict handled differently  
+**simplified from the actual git but still good for learning the gist of it  
+
+*no command supports flags in the way actual git does*   
 
 ## Testing
 To test my implementation, I wrote down on paper theoretically where my files should go after each command from my understanding and then doublechecked the behavior with the actual git on sample files. Feel free to add your own tests as the howto on inputting commands in the JUnit is very clear with examples on how to input commands through Java. I have provided a NaiveGit, getText, createFile, writeFile, recursiveDelete, and extractCommitMessage that should make it easy to write tests and try it yourself.
