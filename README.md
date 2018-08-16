@@ -1,10 +1,10 @@
 # NaiveGit
 
-This is a basic version control system that is implemented in Java which specifically stores changes as copies of files instead of the changes as hashes. I made this because the first time I was learning git, I was not quick on understanding how git version control. The terms HEAD and using SHA-1 to track changes were confusing and it cleared up when a friend worked out the process with files and a directory on their PC. I made this project because it would be nice to have a program where you can watch "git" save changes and modify files with a debugger without having to read through the hashes themselves. This is NOT meant to be a fully functional nor efficient version control system. This is a learning tool for people who would not be able to comprehend the source code at first and would like a more hands-on approach. It supports most file tracking features but not remote control and repositories.
+This is a basic version control system that is implemented in Java which specifically stores changes as copies of files instead of the changes as hashes. I made this because the first time I was learning git, I was not quick on understanding how git version control. The terms HEAD and using SHA-1 to track changes were confusing and it cleared up when a friend worked out the process with files and a directory on their PC. I made this project because it would be nice to have a program where we can watch "git" save changes and modify files with a debugger without having to read through the hashes themselves. This is NOT meant to be a fully functional nor efficient version control system. This is a learning tool for people who would not be able to comprehend the source code at first and would like a more hands-on approach. It supports most file tracking features but not remote control and repositories.
 
 ## Getting Started
 
-Requires Java and if JUnit is how you roll (which you should), that too. Copy and paste into directory then plug and play!     
+Requires Java and JUnit for the tests. Copy and paste into directory then plug and play!     
 Compile with `javac *.java` and run with `java NaiveGit command [input]`
 
 ### Features
@@ -31,12 +31,12 @@ These are the commands that are in NaiveGit:
 *no command supports flags in the way actual git does*   
 
 ## Testing
-To test my implementation, I wrote down on paper theoretically where my files should go after each command from my understanding and then doublechecked the behavior with the actual git on sample files. Feel free to add your own tests as the howto on inputting commands in the JUnit is very clear with examples on how to input commands through Java. I have provided a NaiveGit, getText, createFile, writeFile, recursiveDelete, and extractCommitMessage that should make it easy to write tests and try it yourself.
+To test my implementation, I wrote down on paper theoretically where my files should go after each command from my understanding and then doublechecked the behavior with the actual git on sample files. Feel free to add tests as the howto on inputting commands in the JUnit is very clear with examples on how to input commands through Java. I have provided a NaiveGit(), getText(), createFile(), writeFile(), recursiveDelete(), and extractCommitMessage() that should make it easy to write tests.
 
 
 ### Running the Tests
 
-To run the tests, you should just run unit test as you would for other projects either ide or in commandline. For commandline, if junit is setup properly use:
+To run the tests, use either command line or IDE. For commandline, if junit is setup properly use:
 
 `java org.junit.runner.JUnitCore NaiveGit.NaiveGitTest`
 
