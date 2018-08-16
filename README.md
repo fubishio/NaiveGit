@@ -31,7 +31,7 @@ These are the commands that are in NaiveGit:
 *no command supports flags in the way actual git does*   
 
 ## Testing
-To test my implementation, I wrote down on paper theoretically where my files should go after each command from my understanding and then doublechecked the behavior with the actual git on sample files. Feel free to add tests as the howto on inputting commands in the JUnit is very clear with examples on how to input commands through Java. I have provided a NaiveGit(), getText(), createFile(), writeFile(), recursiveDelete(), and extractCommitMessage() that should make it easy to write tests.
+To test my implementation, I wrote down on paper theoretically where my files should go after each command from my understanding and then doublechecked the behavior with the actual git on sample files. Feel free to add tests as the howto on inputting commands in the JUnit is very clear with examples on how to input commands through Java. I have provided a NaiveGit(), getText(), createFile(), writeFile(), recursiveDelete(), and extractCommitMessage() that should make it easy to write tests and run them.
 
 
 ### Running the Tests
